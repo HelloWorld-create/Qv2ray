@@ -126,8 +126,8 @@ void MainWindow::ReloadRecentConnectionList()
 void MainWindow::OnRecentConnectionsMenuReadyToShow()
 {
     tray_RecentConnectionsMenu->clear();
-    tray_RecentConnectionsMenu->addAction(tray_ClearRecentConnectionsAction);
-    tray_RecentConnectionsMenu->addSeparator();
+    //    tray_RecentConnectionsMenu->addAction(tray_ClearRecentConnectionsAction);
+    //    tray_RecentConnectionsMenu->addSeparator();
     for (const auto &conn : GlobalConfig.uiConfig.recentConnections)
     {
         if (ConnectionManager->IsValidId(conn))
